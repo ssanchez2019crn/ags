@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photoschsop</title>
+    <link rel="icon" href="https://www.stickpng.com/assets/images/586d7ac125738d9f2d793e92.png" />
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        ul {
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 5%;
+
+        }
+
+        input {
+            width: 90%;
+        }
+
+        .header {
+            background: lightskyblue;
+            margin: 0;
+            position: relativ-e;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            background: linear-gradient(135deg, navy, blue);
+            color: white;
+            width: 45px;
+            height: 45px;
+            margin-left: 25px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.75em;
+            text-align: left;
+            border: lightcyan solid 3.25px;
+        }
+
+        li {
+            width: 10%;
+            margin: 0 2.5%;
+            justify-content: center;
+            list-style: none;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.09) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.09) 75%, rgba(0, 0, 0, 0.09) 0), linear-gradient(45deg, rgba(0, 0, 0, 0.09) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.09) 75%, rgba(0, 0, 0, 0.09) 0), white;
+            background-position: 0px 0, 5px 5px;
+            background-size: 10px 10px, 10px 10px;
+        }
+
+        @media (max-width: 1040px) {
+            h2 {
+                font-size: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 60%;
+            }
+        }
+
+        @media (max-width: 425px) {
+            h2 {
+                font-size: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Ps</h1><br>
+    </div>
+    <ul style="display: flex;">
+        <li class="efectes">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" id="limuno" alt="">
+            <h2>Desenfocar</h2>
+            <input type="range" id="desenfocar" value=0 max=10>
+            <p></p>
+        </li>
+        <li class="efectes">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" id="limdos" alt="">
+            <h2>Gris</h2>
+            <input type="range" id="gris" value=0 max=100>
+            <p></p>
+        </li>
+        <li class="efectes">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" id="limtres" alt="">
+            <h2>Ombra</h2>
+            <input type="range" id="ombra" value=0 max=10>
+            <p></p>
+        </li>
+        <li class="efectes">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" id="limcuatro" alt="">
+            <h2>Sepia</h2>
+            <input type="range" id="sepia" value=0 max=100>
+            <p></p>
+        </li>
+        <li class="efectes ">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" id="limcinco" alt="">
+            <h2>Lluminositat</h2>
+            <input type="range" id="lluminositat" min=100 value=100 max=1000>
+            <p></p>
+        </li>
+    </ul>
+    <ul style="display: flex;">
+        <li class="efectes ">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" alt="" id="limseis">
+            <h2>Contrast</h2>
+            <input type="range" id="contrast" value=0 max=1000>
+            <p></p>
+        </li>
+        <li class="efectes ">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" alt="" id="limsiete">
+            <h2>To</h2>
+            <input type="range" id="to" value=0 max=255>
+            <p></p>
+        </li>
+        <li class="efectes ">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" alt="" id="limocho">
+            <h2>Invertir</h2>
+            <input type="range" id="invertir" value=0 max=100>
+            <p></p>
+        </li>
+        <li class="efectes ">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" alt="" id="limnueve">
+            <h2>Saturar</h2>
+            <input type="range" id="saturar" value=0 max=300>
+            <p></p>
+        </li>
+        <li class="efectes ">
+            <img src="https://www.kroger.com/product/images/large/front/0000000004053" alt="" id="limdiez">
+            <h2>Opacitat</h2>
+            <input type="range" id="opacitat" value="0" max=100>
+            <p></p>
+        </li>
+    </ul>
+</body>
+<script type="text/javascript">
+
+    document.getElementById("desenfocar").addEventListener("input", desenfocarr)
+    document.getElementById("gris").addEventListener("input", grisr)
+    document.getElementById("ombra").addEventListener("input", ombrar)
+    document.getElementById("sepia").addEventListener("input", sepiar)
+    document.getElementById("lluminositat").addEventListener("input", lluminositatr)
+    document.getElementById("contrast").addEventListener("input", contrastr)
+    document.getElementById("to").addEventListener("input", tor)
+    document.getElementById("invertir").addEventListener("input", invertirr)
+    document.getElementById("saturar").addEventListener("input", saturarr)
+    document.getElementById("opacitat").addEventListener("input", opacitatr)
+    function desenfocarr() {
+        document.getElementById("limuno").style.filter = "blur(" + desenfocar.value + "px)";
+    }
+    function grisr() {
+        document.getElementById("limdos").style.filter = "grayscale(" + gris.value + "%)";
+    }
+
+    function ombrar() {
+        document.getElementById("limtres").style.filter = "drop-shadow(" + ombra.value + "px " + ombra.value + "px)";
+    }
+    function sepiar() {
+        document.getElementById("limcuatro").style.filter = "sepia(" + sepia.value + "%)";
+    }
+    function lluminositatr() {
+        document.getElementById("limcinco").style.filter = "brightness(" + lluminositat.value + "%)";
+    }
+    function contrastr() {
+        document.getElementById("limseis").style.filter = "contrast(" + contrast.value + "%)";
+    }
+    function tor() {
+        document.getElementById("limsiete").style.filter = "hue-rotate(" + to.value + "deg)";
+    }
+    function invertirr() {
+        document.getElementById("limocho").style.filter = "invert(" + invertir.value + "%)";
+    }
+    function saturarr() {
+        document.getElementById("limnueve").style.filter = "saturate(" + saturar.value + "%)";
+    }
+    function opacitatr() {
+        document.getElementById("limdiez").style.filter = "opacity(" + opacitat.value + "%)";
+    }
+</script>
+
+</html>

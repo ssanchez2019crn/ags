@@ -1,0 +1,92 @@
+body{
+    background: #333;
+    margin: 0;
+    font-family: Helvetica,Arial,  sans-serif;
+}
+header{
+    background: seashell;
+    width: 100%;
+    height: 60px;
+    display: flex; 
+    align-items: center;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px; 
+}
+
+.w-50{
+    width: 50%;
+}
+.w-70{
+    width: 70%;
+}
+
+header a{
+    padding-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.pack{
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.actividad{
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    background: seashell;
+    margin: 20px;
+    overflow: hidden;
+
+}
+
+.actividad:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.nombre-actividad{
+
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size:1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: seashell;
+    border-radius: 0 0 10px 10px ;
+    
+}
+
+.codepen{
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    position: relative;
+    float: right;
+    margin-right: 16%;
+    background-image: url("img\social-media-stumble-codepen-512.png");
+}
+
+.codepen:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+}
+
+.actividad img{
+    width:auto;
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}

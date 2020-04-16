@@ -1,0 +1,398 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: black;
+    margin: 0;
+    background: seashell;
+    background: rgb(69, 69, 69);
+    overflow: hidden;
+}
+
+#header {
+    width: 80%;
+    margin-left: 10%;
+    height: 4rem;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.5s, color 0.5s;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+.friend {
+    margin-left: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.profile-pic {
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+#principal {
+    width: 80%;
+    margin-left: 10%;
+    height: 13rem;
+    background: lightblue;
+    border-radius: 0px 0px 20px 20px;
+    transform: scale();
+}
+
+#bocata {
+    width: 10rem;
+    height: auto;
+    border-radius: 10px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: lightcyan;
+    position: relative;
+    margin-bottom: 1rem;
+    left: 2rem;
+    top: 2rem;
+    clear: both;
+    box-shadow: 0px 3px 0px grey;
+    transition: background 0.5s, color 0.5s;
+}
+
+#bocata:after {
+    content: "It's morning in Tokyo!";
+    position: relative;
+    padding: 0.5rem;
+}
+
+#bocata-d {
+    width: 10rem;
+    height: auto;
+    border-radius: 10px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: lightcyan;
+    position: relative;
+    margin-bottom: 1rem;
+    left: 2rem;
+    top: 2rem;
+    clear: both;
+    box-shadow: 0px 3px 0px grey;
+    transition: background 0.5s, color 0.5s;
+}
+
+#bocata-d:after {
+    content: "It's morning in Tokyo!";
+    position: relative;
+    padding: 0.5rem;
+}
+
+.dreta {
+    transform: scale(-1, 1);
+    margin-right: 4rem;
+    float: right;
+    height: 3rem;
+}
+
+.dreta:before {
+    top: 0.5rem;
+}
+
+.dreta:after {
+    transform: scale(-1, 1);
+    position: relative;
+}
+
+.opciones {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 25%;
+    height: 13rem;
+    padding: 2rem;
+    background: wheat;
+    border-radius: 20px;
+    transform: scale();
+    margin-top: 1rem;
+    float: left;
+    cursor: pointer;
+}
+
+.bocadillo {
+    background: tomato;
+    width: 5rem;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 3rem;
+    float: left;
+    clear: both;
+    box-shadow: 0px 3px 0px grey;
+}
+
+.bocadillo:before {
+    content: "";
+    background-color: transparent;
+    border-top: solid transparent 1rem;
+    border-left: solid transparent 1rem;
+    border-bottom: solid tomato 1rem;
+    border-right: solid transparent 1rem;
+    width: 0;
+    height: 0;
+    position: relative;
+    left: -2rem;
+    z-index: 12;
+    box-shadow: 0px 3px 0px grey;
+}
+
+.right {
+    transform: scale(-1, 1);
+    float: right;
+}
+
+.right:after {
+    transform: scale(-1, 1);
+    position: relative;
+}
+
+.circulo {
+    width: 2rem;
+    height: 2rem;
+    background: wheat;
+    position: relative;
+    top: 11rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: solid 4px firebrick;
+    cursor: pointer;
+}
+
+.colorN {
+    background: lightblue;
+    margin-right: 1%;
+}
+
+.colorNboc {
+    background: lightcyan;
+    color: #333;
+}
+
+.colorNboc:before {
+    border-bottom: solid lightcyan 1rem;
+}
+
+.colorNcirc {
+    border: solid 4px cadetblue;
+    background: lightblue;
+}
+
+.color2 {
+    background: skyblue;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.color2boc {
+    background: springgreen;
+    color: #333;
+}
+
+.color2boc:before {
+    border-bottom: solid springgreen 1rem;
+}
+
+.color2circ {
+    border: solid 4px forestgreen;
+    background: skyblue;
+}
+
+.color3 {
+    background: palegreen;
+}
+
+.color3boc {
+    background: paleturquoise;
+    color: #333;
+}
+
+.color3boc:before {
+    border-bottom: solid paleturquoise 1rem;
+}
+
+.color3circ {
+    border: solid 4px turquoise;
+    background: palegreen;
+}
+
+.coloru {
+    background: tomato;
+}
+
+.lletres {
+    color: black;
+}
+
+#circb {
+    background: skyblue;
+}
+
+#circm {
+    background: wheat;
+}
+
+#circv {
+    background: palegreen;
+}
+
+.options {
+    width: 80%;
+    margin: 10px auto;
+    margin-left: 10%;
+    height: 100px;
+    background: lightslategrey;
+    border-radius: 10px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+    overflow-x: scroll;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.cercle {
+    width: 45px;
+    height: 45px;
+    border: solid 5px lightsteelblue;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 50px;
+}
+
+.cercle:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#morado, #morado2, #morado3 {
+    background: lightpink;
+}
+
+#rosa, #rosa2, #rosa3 {
+    background: palevioletred;
+}
+
+#seagreen, #seagreen2 {
+    background: darkseagreen;
+}
+
+#default, #default2 {
+    background: lightblue;
+}
+
+#noche, #noche2, #noche3 {
+    background: darkslateblue;
+}
+
+#rainbow, #rainbowBocata, #rainbowHeader {
+    background-position: center;
+    background-size: auto;
+    position: relative;
+}
+
+*:focus {
+    outline: none;
+}
+
+input[type=color] {
+    border-radius: 50%;
+    background-color: transparent;
+    width:50px;
+    height:50px;
+    padding:0;
+}
+
+input[type=color]::-webkit-color-swatch{
+    -webkit-appearance: none;
+    border-radius: 50%;
+}
+
+.arrow {
+    top: 200px;
+    position: relative;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 20px 0 20px;
+    border-color: lightcyan transparent transparent transparent;
+}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 425px) {
+    body {
+        width: 80%;
+    }
+    #header {
+        width: 135%;
+        margin-left: 4%;
+    }
+    #principal {
+        width: 135%;
+        margin-left: 4%;
+    }
+    .options {
+        width: 132%;
+        margin-left: 4%;
+        position: relative;
+        bottom: 30px;
+    }
+    .opciones {
+        transform: scale(0.8);
+        transform-origin: left top;
+        margin-left: 4%;
+        width: 75%;
+    }
+    .right {
+        display: none;
+    }
+    .main {
+        height: 5rem;
+    }
+    .bocadillo {
+        transform: scale(0.7);
+        right: 20px;
+    }
+    .arrow {
+        top: 75px;
+    }
+    .circulo {
+        top: 60px;
+        transform: scale(0.8);
+    }
+}
